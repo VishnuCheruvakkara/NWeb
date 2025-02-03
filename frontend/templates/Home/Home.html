@@ -1,0 +1,69 @@
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <title>Django Tailwind</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		{% tailwind_css %}
+	</head>
+
+	<body class="bg-gray-900 text-white">
+		<!-- Header -->
+		<header class="bg-gray-800 py-4 px-6 flex justify-between items-center">
+			<h1 class="text-2xl font-bold text-blue-500">NWeb</h1>
+			<nav>
+				<ul class="flex space-x-6">
+					<li><a href="#home" class="hover:text-blue-400">Home</a></li>
+					<li><a href="#features" class="hover:text-blue-400">Features</a></li>
+					<li><a href="#services" class="hover:text-blue-400">Services</a></li>
+					<li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+	
+		<!-- Hero Section -->
+		<section id="home" class="h-screen flex flex-col justify-center items-center text-center px-4">
+			<h1 class="text-4xl md:text-6xl font-bold">Protect Your Digital World with NWeb</h1>
+			<p class="mt-4 text-lg md:text-xl max-w-2xl">Advanced Cyber Security solutions powered by NMAP to safeguard your business and personal data.</p>
+			<a href="#services" class="mt-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg text-lg">Get Started</a>
+		</section>
+	
+		<!-- Features Section -->
+		<section id="features" class="py-16 px-6 bg-gray-800">
+			<div class="text-center">
+				<h2 class="text-3xl font-bold">Why Choose NWeb?</h2>
+				<p class="mt-3 max-w-xl mx-auto">We provide industry-leading security solutions including NMAP-powered network scanning.</p>
+			</div>
+			<div class="grid md:grid-cols-3 gap-6 mt-10">
+				<div class="bg-gray-700 p-6 rounded-lg text-center">
+					<h3 class="text-xl font-semibold">NMAP Security Scanning</h3>
+					<p class="mt-2">Advanced network scanning using NMAP to detect vulnerabilities.</p>
+				</div>
+				<div class="bg-gray-700 p-6 rounded-lg text-center">
+					<h3 class="text-xl font-semibold">Threat Intelligence</h3>
+					<p class="mt-2">AI-powered analysis to detect risks before they strike.</p>
+				</div>
+				<div class="bg-gray-700 p-6 rounded-lg text-center">
+					<h3 class="text-xl font-semibold">24/7 Security Monitoring</h3>
+					<p class="mt-2">Continuous protection against cyber threats and intrusions.</p>
+				</div>
+			</div>
+		</section>
+	
+		<!-- Call to Action -->
+		<section id="services" class="py-12 text-center">
+			<h2 class="text-3xl font-bold">Secure Your Business Today!</h2>
+			<p class="mt-2">Join thousands of businesses protecting their networks with NWeb.</p>
+			<div class="mt-10">
+				<a href="#contact" class="mt-4 px-6 py-3 bg-green-600 hover:bg-green-700 rounded-lg text-lg">Contact Us</a>
+			</div>
+		</section>
+	
+		<!-- Footer -->
+		<footer class="bg-gray-800 py-6 text-center">
+			<p class="text-gray-400">&copy; 2024 NWeb. All Rights Reserved.</p>
+		</footer>
+	</body>
+</html>
