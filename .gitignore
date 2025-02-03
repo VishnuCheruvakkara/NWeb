@@ -1,0 +1,2 @@
+#protect env from git push
+.env 
